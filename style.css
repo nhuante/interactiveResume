@@ -273,6 +273,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     color: white;
+    /* text-decoration: underline; */
 }
 
 .aboutme_paragraph {
@@ -298,11 +299,20 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 0.25rem 0.5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    background: #ffa8ba;
+    background: #ec5f7b;
     color: white;
     border-radius: 5px;
 }
 
+.about_grid_coursework_item {
+    padding: 0.25rem 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background: #e7820f;
+    /* background: #0045a0; */
+    color: white;
+    border-radius: 5px;
+}
 .about_experience_section {
     /* align-items: center; */
     text-align: center;
@@ -317,6 +327,7 @@ p, h1, h2, h3, h4, h5, h6 {
     list-style: none;
     padding: 0;
     max-width: 1000px;
+    margin-top: 2rem;
 }
 
 .about_grid_exp_item {
@@ -341,26 +352,42 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
-/* .exp_item_dates {
-    color: #fa5246;
-    color: #faae2b;
-    display: inline-block;
-    width: 250px;
-    width: 30%;
-    text-align: right;
-    align-items: right;
-} */
+.edu_item_title {
+    width: 350px;
+    /* width: 45%; */
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+}
+
+.education_logo {
+    /* min-height: 100px; */
+    max-height: 150px;
+    max-width: 150px;
+    /* min-width: 100px; */
+    margin-right: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    .education_logo {
+       max-width: 100px;
+       max-height: 100px;
+    }
+}
 
 .exp_item_descr {
     font-size: .9rem;
     margin-left: 1rem;
     color: #d8d8d8;
-    /* display: inline-block; */
-    /* width: calc(100%-130px); */
-    /* padding-top: .5rem; */
     margin-left: 1rem;
     /* width: 90%; */
 }
+
+.edu_list_row {
+    align-items: flex-start;
+    /* padding-top: 1rem; */
+}
+
 
 
 .exp_item_bullets {
@@ -391,7 +418,7 @@ p, h1, h2, h3, h4, h5, h6 {
     max-width: 1300px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     .projects_grid {
         grid-template-columns: 1fr;
     }
@@ -431,6 +458,17 @@ p, h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 1rem;
     padding: 1rem 0;
+}
+
+a[href$=".pdf"]{
+    content: "\1F4C4"; /* Unicode for PDF icon (you can use any other icon or custom content) */
+    margin-right: 0.5em; /* Adjust spacing between icon and link text */
+    color: #faae2b;
+}
+
+a[href$=".pdf"]::after{
+    content: "\1F4C4"; /* Unicode for PDF icon (you can use any other icon or custom content) */
+    margin-right: 0.5em; /* Adjust spacing between icon and link text */
 }
 
 .contact_form_title {
