@@ -353,6 +353,8 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     align-items: center;
     margin: auto;
+    justify-content: center;
+    height: 100%;
 }
 
 .disabled_button {
