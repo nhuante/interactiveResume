@@ -348,6 +348,53 @@ p, h1, h2, h3, h4, h5, h6 {
     /* text-decoration: underline; */
 }
 
+.gallery_container {
+    position: relative;
+    margin-bottom: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.disabled_button {
+    background-color: #4f5656;
+}
+
+.gallery_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_image {
+    width: 400px;
+    height: auto;
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.gallery_prev {
+    left: 10px;
+}
+
+.gallery_next {
+    right: 10px;
+}
+
 .aboutme_paragraph {
     font-size: 1rem;
     color: #d8d8d8;

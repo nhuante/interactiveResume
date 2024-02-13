@@ -44,3 +44,40 @@ window.addEventListener('scroll', function() {
       header_logo_container.classList.remove('logo_hidden');
     }
   });
+
+const PHOTOS = [
+    "images/gallery_image_headshot.jpg",
+    "images/gallery_image_memorial.jpg",
+    "images/nat_logo.png",
+];
+
+let index = 0;
+document.querySelector(".gallery_image").src = PHOTOS[index];
+
+document.querySelector(".gallery_prev").disabled = true;
+document.querySelector(".gallery_prev").classList.add('disabled_button');
+
+document.querySelector(".gallery_next").addEventListener("click", () => {
+    index += 1;
+    document.querySelector(".gallery_prev").classList.remove('disabled_button');
+    document.querySelector(".gallery_prev").disabled = false;
+    if (index === PHOTOS.length - 1) {
+        // disabled the button 
+        document.querySelector(".gallery_next").classList.add('disabled_button');
+        document.querySelector(".gallery_next").disabled = true;
+    }
+    document.querySelector(".gallery_image").src = PHOTOS[index];
+    console.log("next clicked");
+})
+
+document.querySelector(".gallery_prev").addEventListener("click", () => {
+    index -= 1;
+    document.querySelector(".gallery_next").disabled = false;
+    document.querySelector(".gallery_next").classList.remove('disabled_button');
+    if (index === 0) {
+      document.querySelector(".gallery_prev").classList.add('disabled_button');
+      document.querySelector(".gallery_prev").disabled = true;
+    }
+    document.querySelector(".gallery_image").src = PHOTOS[index];
+    console.log("prev clicked");
+});
