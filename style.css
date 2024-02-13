@@ -377,6 +377,12 @@ p, h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
+@media (max-width: 500px) {
+    .gallery_image {
+        width: 250px;
+    }
+}
+
 .gallery-nav {
     position: absolute;
     top: 50%;
