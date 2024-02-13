@@ -93,16 +93,6 @@ p, h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-
-@media (max-width: 500px) {
-    .header_logo_container {
-        gap: 100px;
-        margin-right: 40px;
-        /* margin-left: 40px; */
-    }
-    
-}
-
 .header_logo_image_container {
     width: 65px;
     height: 65px;
@@ -118,6 +108,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header_logo_text {
     font-size: 1rem;
+    margin-right: 0;
+}
+
+@media (max-width: 500px) {
+    .header_logo_text {
+        margin-left: auto;
+    }
+    
 }
 
 .header_links {
@@ -149,7 +147,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .intro_content {
     margin: auto;
     justify-content: space-between;
-    /* justify-content: center; */
     padding-top: 25vh;
     align-items: center;
     position: relative;
