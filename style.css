@@ -97,7 +97,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 500px) {
     .header_logo_container {
         gap: 175px;
-        margin-right: 45px;
+        margin-right: 40px;
     }
     
 }
@@ -272,7 +272,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     .section_intro_description {
-        width: 400px;
+        width: 350px;
     }
 }
 
@@ -517,7 +517,7 @@ form {
 
 @media (max-width: 500px) {
     form {
-        max-width: 450px;
+        max-width: 300px;
     }
 }
 
