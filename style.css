@@ -114,6 +114,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 500px) {
     .header_logo_text {
         margin-left: auto;
+        display: none;
     }
     
 }
@@ -128,6 +129,13 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     text-decoration: none;
     font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+    .header_link {
+        font-size: .75rem;
+    }
+    
 }
 
 .header_link:hover {

@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 window.addEventListener('scroll', function() {
-    var header_logo_container = document.querySelector('.header_logo_text');
+    var header_logo_container = document.querySelector('.header_logo_container');
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   
     if (window.innerWidth < 500) { // Check screen width
