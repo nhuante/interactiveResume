@@ -31,21 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 window.addEventListener('scroll', function() {
-    // var header = document.querySelector('.main_header');
     var header_logo_container = document.querySelector('.header_logo_container');
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   
     if (window.innerWidth < 500) { // Check screen width
       if (scrollPosition > 0) { // If scrolled down
-        // header.classList.add('fixed_nav');
         header_logo_container.classList.add('logo_hidden');
-        console.log("scrolled");
       } else { // If at the top
-        // header.classList.remove('fixed_nav');
         header_logo_container.classList.remove('logo_hidden');
       }
     } else { // If screen width is greater than or equal to 500px
-    //   header.classList.remove('fixed_nav');
       header_logo_container.classList.remove('logo_hidden');
     }
   });

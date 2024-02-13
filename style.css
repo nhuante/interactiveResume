@@ -96,7 +96,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     .header_logo_container {
-        gap: 175px;
+        gap: 150px;
         margin-right: 40px;
     }
     
