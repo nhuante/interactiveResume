@@ -46,7 +46,7 @@ window.addEventListener('scroll', function() {
   });
 
 const PHOTOS = [
-    "images/gallery_image_headshot.jpg",
+    "images/gallery_image_headshot.JPG",
     "images/gallery_image_memorial.jpg",
     "images/nat_logo.png",
 ];
