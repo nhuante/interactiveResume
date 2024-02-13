@@ -78,7 +78,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     .header_content {
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: flex-start;
     }
     
