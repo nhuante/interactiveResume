@@ -133,7 +133,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     .header_link {
-        font-size: .75rem;
+        /* font-size: .75rem; */
+        margin-right: 10px;
     }
     
 }
