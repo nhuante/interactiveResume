@@ -60,6 +60,7 @@ p, h1, h2, h3, h4, h5, h6 {
     /* background: #f2f7f5; */
     background-color: #f2f7f5;
     position: fixed;
+    /* position: static; */
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -75,9 +76,30 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+@media (max-width: 500px) {
+    .header_content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+}
+
 .header_logo_container {
     display: flex;
     align-items: center;
+}
+
+.logo_hidden {
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    .header_logo_container {
+        gap: 175px;
+        margin-right: 45px;
+    }
+    
 }
 
 .header_logo_image_container {
@@ -248,6 +270,12 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
+@media (max-width: 500px) {
+    .section_intro_description {
+        width: 400px;
+    }
+}
+
 .about_grid {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));; */
@@ -258,7 +286,7 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 3rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     .about .about_grid {
         grid-template-columns: 1fr;
     }
@@ -460,13 +488,13 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 1rem 0;
 }
 
-a[href$=".pdf"]{
+a[href$="Resume.pdf"]{
     content: "\1F4C4"; /* Unicode for PDF icon (you can use any other icon or custom content) */
     margin-right: 0.5em; /* Adjust spacing between icon and link text */
     color: #faae2b;
 }
 
-a[href$=".pdf"]::after{
+a[href$="Resume.pdf"]::after{
     content: "\1F4C4"; /* Unicode for PDF icon (you can use any other icon or custom content) */
     margin-right: 0.5em; /* Adjust spacing between icon and link text */
 }
@@ -486,6 +514,13 @@ form {
     max-width: 600px;
     margin: auto;
 }
+
+@media (max-width: 500px) {
+    form {
+        max-width: 450px;
+    }
+}
+
 
 label {
     margin-bottom: 5px;

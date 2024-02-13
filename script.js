@@ -28,3 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error("Error:", error));
     });
 });
+
+
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('.main_header');
+    var headerLinks = document.querySelector('.header_links');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+    if (window.innerWidth < 500) { // Check screen width
+      if (scrollPosition > 0) { // If scrolled down
+        // header.classList.add('fixed_nav');
+        headerLinks.classList.add('logo_hidden');
+      } else { // If at the top
+        header.classList.remove('fixed_nav');
+        headerLinks.classList.remove('logo_hidden');
+      }
+    } else { // If screen width is greater than or equal to 500px
+    //   header.classList.remove('fixed_nav');
+      headerLinks.classList.remove('logo_hidden');
+    }
+  });
