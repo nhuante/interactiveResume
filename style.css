@@ -70,6 +70,14 @@ p, h1, h2, h3, h4, h5, h6 {
     color:#00473e;
 }
 
+@media (max-width: 500px) {
+    .main_header {
+        background-color: #00473e;
+        /* color: #d8d8d8; */
+    }
+    
+}
+
 .header_content {
     display: flex;
     justify-content: space-between;
@@ -80,6 +88,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .header_content {
         /* flex-direction: column; */
         justify-content: flex-start;
+        /* color: #d8d8d8; */
     }
     
 }
@@ -143,6 +152,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .header_link {
         font-size: .9rem;
         margin-right: 8px;
+        color: #d8d8d8;
     }
     
 }
