@@ -2,6 +2,8 @@
 
 ### Deployed Site
 [natalie-huante.com](natalie-huante.com)
+natalie-huante.com 
+[natalie-huante.com](https://natalie-huante.com)
 
 
 ### Background
