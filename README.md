@@ -1,7 +1,7 @@
 ## Natalie Huante | Interactive Resume 
 
 ### Deployed Site
-[natalie-huante.con](natalie-huante.com)
+[natalie-huante.com](natalie-huante.com)
 
 
 ### Background
