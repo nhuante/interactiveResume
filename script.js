@@ -47,8 +47,10 @@ window.addEventListener('scroll', function() {
 
 const PHOTOS = [
     "images/gallery_image_headshot.JPG",
-    "images/gallery_image_memorial.jpg",
-    "images/nat_logo.png",
+    "images/gallery_image_grad1.png", 
+    "images/gallery_image_grad2.png", 
+    "images/gallery_image_seattle.png",
+    "images/gallery_image_memorial.jpg",  
 ];
 
 let index = 0;
