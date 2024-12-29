@@ -2,14 +2,7 @@
 
 ### Deployed Site
 natalie-huante.com
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 99d0477 (updated readme and changed degree names)
-
->>>>>>> 6b7d454 (updated experience section)
 ### Background
 This website was launched as a final project for the CPSC 298 - Intro to Web Development course and continues to be updated regularly to showcase current updates to my portfolio. In learning HTML, CSS, and Javascript, I was able to combine several techniques and formats to build my own interactive portfolio or resume that future employers and colleagues can visit online. The website features information about my skills, experience, and personal background as well as methods in which to contact me. 
 
